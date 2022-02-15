@@ -483,9 +483,9 @@ class GoogleDriveHelper:
                 LOGGER.info(f"Telegra.ph limit hit, sleeping for {e.retry_after}s")
                 time.sleep(e.retry_after)
                 telegra_ph[i % len(telegra_ph)].edit_page(path = self.path[prev_page],
-                                    title = 'SearchX',
-                                    author_name='XXX',
-                                    author_url='https://github.com/hsj51/SearchX',
+                                    title = 'Sito Cloud',
+                                    author_name='Sito Mao',
+                                    author_url='https://t.me/sito_mao',
                                     html_content=self.telegraph_content[i])
         return
 
